@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainlayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#E4E4E4">
+
+    <!-- Toolbar Begins -->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/actionbar_bg"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:paddingBottom="20dp"
+                android:paddingTop="5dp"
+                android:scaleType="fitStart"
+                android:src="@drawable/banner" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="8dp"
+                android:text="Google Geocoing Search"
+                android:textColor="#feaa3f"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    <!-- Toolbar End -->
+
+    <View
+        android:id="@+id/banner_line"
+        android:layout_below="@+id/toolbar"
+        android:background="#145AC1"
+        android:layout_width="match_parent"
+        android:layout_height="2dp" />
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/banner_line"
+        android:layout_margin="8dip"
+        android:background="#00000000"
+        android:cacheColorHint="#00000000"
+        android:divider="#00000000"
+        android:dividerHeight="5dip"
+        android:drawSelectorOnTop="false" />
+
+</RelativeLayout>

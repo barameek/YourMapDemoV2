@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <color name="header">#CC181E</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="tranparency">#00000000</color>
+    <color name="green_apple">#A2DD34</color>
+    <color name="background">#A2DD34</color>
+    <color name="actionbar_bg">#4CAF50</color>
+    <color name="accent_color">#E8F5E9</color>
+    <color name="default_text_color">#a6a6a6</color>
+    <color name="header_text_color">#FFFFFF</color>
+    <color name="login_btn_bg_normal">#FEAA3F</color>
+    <color name="login_btn_bg_pressed">#FFBD76</color>
+
+</resources>

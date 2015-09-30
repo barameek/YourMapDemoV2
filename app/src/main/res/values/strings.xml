@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">YourMapDemo</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_address_list">AddressListActivity</string>
+    <string name="title_activity_street_view">StreetViewActivity</string>
+
+
+    <string-array name="slide_menu_icon">
+        <item>@drawable/pin_01</item>
+        <item>@drawable/pin_02</item>
+        <item>@drawable/pin_03</item>
+        <item>@drawable/pin_04</item>
+        <item>@drawable/pin_05</item>
+        <item>@drawable/pin_06</item>
+        <item>@drawable/pin_07</item>
+    </string-array>
+
+
+</resources>

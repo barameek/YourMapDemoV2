@@ -1,0 +1,124 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E4E4E4"
+    android:orientation="vertical">
+
+
+    <!-- Toolbar Begins -->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/actionbar_bg">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:paddingBottom="20dp"
+                android:paddingTop="5dp"
+                android:scaleType="fitStart"
+                android:src="@drawable/banner" />
+
+
+            <TextView
+                android:id="@+id/mLocationTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="8dp"
+                android:text="Searching current location.."
+                android:textColor="#ffebd2"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/mAnimationBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:text="ANIMATE"
+                android:textColor="#FFFFFF"
+                android:layout_centerVertical="true"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_alignParentRight="true"
+                />
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    <!-- Toolbar End -->
+
+
+    <View
+        android:id="@+id/banner_line"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/toolbar"
+        android:background="#145AC1" />
+
+
+    <FrameLayout
+        android:id="@+id/control_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/banner_line"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="16dip"
+        android:background="#99ffffff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/mAddressEditText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:hint="Google Geocoing Search.."
+            android:paddingLeft="16dp"
+            android:singleLine="true"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/mGeoCodingBtn"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="8dp"
+            android:scaleType="fitCenter"
+            android:src="@android:drawable/ic_menu_search" />
+
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/control_layout"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+
+        <fragment
+            android:id="@+id/mMapView"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            class="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
